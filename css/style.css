@@ -1,16 +1,32 @@
 /*=========General Site Styles==========*/
 body {
-  font-family: Poppins, Georgia, "Times New Roman", Times, sans-serif;
+  font-family: Poppins, Georgia, 'Times New Roman', Times, sans-serif;
   color: #000;
   overflow-x: hidden;
   text-align: center;
+  background-color: #fff;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3,
+.big-header-text {
   color: #00cc6a;
   font-family: Lora, Tahoma, Geneva, Verdana, serif;
   text-transform: uppercase;
   margin: 10px auto;
+}
+
+.big-header-text {
+  font-size: 5em;
+}
+
+i {
+  font-style: normal;
+}
+
+a i {
+  color: #fff;
 }
 
 /*========Footer==========*/
@@ -24,7 +40,6 @@ footer {
 /*=================Home Page Styles==================*/
 .about-peek {
   text-align: justify;
-  text-overflow: ellipsis;
   font-size: 1.5rem;
 }
 
@@ -53,12 +68,15 @@ footer {
 .service-1 {
   background: url(../img/sunrise-service.jpg);
 }
+
 .service-2 {
   background: url(../img/celebration-service.jpg);
 }
+
 .service-3 {
   background: url(../img/prayer-service.jpg);
 }
+
 .service-4 {
   background: url(../img/school-of-the-word.jpg);
 }
@@ -78,80 +96,143 @@ footer {
   top: 13rem;
   left: 1.5rem;
 }
+
 .service-info-text p {
   font-size: 1.2rem;
 }
+
 .service-info-text small {
   font-style: italic;
 }
 
 /*================About Page===================*/
-/*========General Styles==========*/
 #about {
   /*========About-Banner==========*/
 }
+
 #about blockquote {
-  font-family: "Lucida Handwriting", "Courier New", Courier, monospace;
+  font-family: 'Lucida Handwriting', 'Courier New', Courier, monospace;
   font-style: italic;
   font-weight: bold;
-  color: #e3f113;
+  color: #cfd8dc;
 }
+
 #about section {
   padding: 15px;
 }
+
 #about section:not(.our-pastors) {
   font-size: 1.65rem;
 }
-#about section:nth-of-type(even):not(.our-pastors) {
-  background-image: url(../img/bg.jpg);
+
+#about section:nth-of-type(even) {
+  background-color: #263238;
   color: #fff;
 }
+
 #about .about-banner {
   height: 20rem;
-  background: black;
-  /*  background-image: url(../img/sunrise-service.jpg);
-    background-position: center;*/
+  background-image: url(../img/about-banner.JPG);
+  background-position: center;
+  background-size: cover;
   text-align: center;
 }
+
 #about .about-banner-caption {
   position: relative;
   top: 10rem;
 }
 
 /*========About Our Pastors==========*/
-.our-pastors {
-  background: #000;
-}
-.our-pastors .row > div {
-  /*background-image: url(../img/bg.jpg);*/
-  background: #fff;
+.our-pastors .row > div,
+.locations .row > div {
   background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
   height: 25rem;
-  color: #00cc6a;
   text-align: left;
   text-transform: uppercase;
-  border: 5px solid #000;
+  border: 5px solid #263238;
 }
-.our-pastors .pastor-peek-text {
+
+.our-pastors .pastor-1,
+.locations .pastor-1 {
+  background-image: url(../img/pst-george.jpg);
+}
+
+.our-pastors .pastor-2,
+.locations .pastor-2 {
+  background-image: url(../img/pst-helen.JPG);
+}
+
+.our-pastors .pastor-3,
+.locations .pastor-3 {
+  background-image: url(../img/pst-francis.JPG);
+}
+
+.our-pastors .pastor-4,
+.locations .pastor-4 {
+  background-image: url(../img/pst-robert.JPG);
+}
+
+.our-pastors .pastor-5,
+.locations .pastor-5 {
+  background-image: url(../img/pst-patrick.JPG);
+}
+
+.our-pastors .pastor-6,
+.locations .pastor-6 {
+  background-image: url(../img/pst-imo.JPG);
+}
+
+.our-pastors .pastor-peek-text,
+.locations .pastor-peek-text {
   position: relative;
-  top: 14rem;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
-.our-pastors .pastor-title {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: bold;
-}
-.our-pastors .pastor-name {
-  font-weight: bold;
-  font-size: 2.5rem;
-}
-.our-pastors .pastor-name .small-text {
-  font-size: 0.5rem;
-}
-.our-pastors .socials {
+  color: #fff;
+  top: 16rem;
   text-align: center;
 }
 
+.our-pastors .pastor-name,
+.locations .pastor-name {
+  font-size: 2rem;
+}
+
+.our-pastors .pastor-name .small-text,
+.locations .pastor-name .small-text {
+  font-weight: normal;
+  font-size: 0.5rem;
+}
+
+.our-pastors .pastor .socials,
+.locations .pastor .socials {
+  text-align: center;
+}
+
+.our-pastors .pastor-role-location,
+.locations .pastor-role-location {
+  color: #e3f113;
+}
+
 /*========Media Queries==========*/
+@media screen and (min-width: 992px) {
+  .our-pastors .row > div {
+    background-clip: padding-box;
+  }
+  .our-pastors .pastor-peek-text {
+    top: 18rem;
+    text-align: center;
+  }
+  .our-pastors .pastor-name {
+    font-size: 1.3rem;
+  }
+  .our-pastors .pastor-name .small-text {
+    font-size: 0.5rem;
+  }
+}
+
 @media screen and (max-width: 543.99px) {
   /*========Home Page==========*/
   /*======Carousel======*/
@@ -159,11 +240,12 @@ footer {
     padding: 20px 10px 10px 10px;
     min-height: 30rem;
   }
-
   /*======Services======*/
   .services {
     margin: 10px;
   }
-
   /*========About Page==========*/
+  .big-header-text {
+    font-size: 1.5rem;
+  }
 }
