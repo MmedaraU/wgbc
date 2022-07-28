@@ -61,50 +61,6 @@ footer {
 }
 
 /*========Services==========*/
-.services {
-  margin-bottom: 10px;
-}
-
-.service-1 {
-  background: url(../img/sunrise-service.jpg);
-}
-
-.service-2 {
-  background: url(../img/celebration-service.jpg);
-}
-
-.service-3 {
-  background: url(../img/prayer-service.jpg);
-}
-
-.service-4 {
-  background: url(../img/school-of-the-word.jpg);
-}
-
-.service-info {
-  color: #fff;
-  background-size: cover;
-  background-clip: content-box;
-  background-position: center;
-  margin-top: 10px;
-  min-height: 20rem;
-  text-align: left;
-}
-
-.service-info-text {
-  position: relative;
-  top: 13rem;
-  left: 1.5rem;
-}
-
-.service-info-text p {
-  font-size: 1.2rem;
-}
-
-.service-info-text small {
-  font-style: italic;
-}
-
 /*================About Page===================*/
 #about {
   /*========About-Banner==========*/
@@ -144,7 +100,7 @@ footer {
 }
 
 /*========About Our Pastors==========*/
-.our-pastors .row > div,
+.our-past ors .row > div,
 .locations .row > div {
   background-position: center;
   background-size: contain;
@@ -155,37 +111,37 @@ footer {
   border: 5px solid #263238;
 }
 
-.our-pastors .pastor-1,
+.our-past ors .pastor-1,
 .locations .pastor-1 {
   background-image: url(../img/pst-george.jpg);
 }
 
-.our-pastors .pastor-2,
+.our-past ors .pastor-2,
 .locations .pastor-2 {
   background-image: url(../img/pst-helen.JPG);
 }
 
-.our-pastors .pastor-3,
+.our-past ors .pastor-3,
 .locations .pastor-3 {
-  background-image: url(../img/pst-francis.JPG);
+  background-image: url(../img/pst-francis.jpg);
 }
 
-.our-pastors .pastor-4,
+.our-past ors .pastor-4,
 .locations .pastor-4 {
-  background-image: url(../img/pst-robert.JPG);
+  background-image: url(../img/pst-robert.jpg);
 }
 
-.our-pastors .pastor-5,
+.our-past ors .pastor-5,
 .locations .pastor-5 {
-  background-image: url(../img/pst-patrick.JPG);
+  background-image: url(../img/pst-patrick.jpg);
 }
 
-.our-pastors .pastor-6,
+.our-past ors .pastor-6,
 .locations .pastor-6 {
-  background-image: url(../img/pst-imo.JPG);
+  background-image: url(../img/pst-imo.jpg);
 }
 
-.our-pastors .pastor-peek-text,
+.our-past ors .pastor-peek-text,
 .locations .pastor-peek-text {
   position: relative;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -195,23 +151,23 @@ footer {
   text-align: center;
 }
 
-.our-pastors .pastor-name,
+.our-past ors .pastor-name,
 .locations .pastor-name {
   font-size: 2rem;
 }
 
-.our-pastors .pastor-name .small-text,
+.our-past ors .pastor-name .small-text,
 .locations .pastor-name .small-text {
   font-weight: normal;
   font-size: 0.5rem;
 }
 
-.our-pastors .pastor .socials,
+.our-past ors .pastor .socials,
 .locations .pastor .socials {
   text-align: center;
 }
 
-.our-pastors .pastor-role-location,
+.our-past ors .pastor-role-location,
 .locations .pastor-role-location {
   color: #e3f113;
 }
